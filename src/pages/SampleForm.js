@@ -4,7 +4,7 @@ import { getNumberAfterBrowse } from "../utils";
 import toast from "react-hot-toast";
 import axios from "axios";
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = process.env.REACT_APP_WEB_BASE_URL;
 
 export default function SampleForm() {
   const location = useLocation();

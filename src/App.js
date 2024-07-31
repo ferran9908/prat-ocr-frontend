@@ -5,7 +5,7 @@ import { FileUploader } from "react-drag-drop-files";
 import toast from "react-hot-toast";
 
 const allowedFiletypes = ["PDF"];
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = process.env.REACT_APP_WEB_BASE_URL;
 
 function App() {
   const [file, setFile] = useState(null);

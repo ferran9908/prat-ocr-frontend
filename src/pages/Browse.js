@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+const BASE_URL = process.env.REACT_APP_WEB_BASE_URL;
 
 export default function Browse() {
   const [searchBy, setSearchBy] = useState("first_name");
