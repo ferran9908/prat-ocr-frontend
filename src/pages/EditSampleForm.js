@@ -39,11 +39,10 @@ export default function EditSampleForm() {
       const payload = { ...requiredForm };
       delete payload["_id"];
       const response = await axios.put(url, { ...payload });
-      console.log({ response });
       toast.success(
         "Record updated successfully, you will be redirected in 5 seconds",
       );
-      setTimeout(() => navigate("/browse"), 5000);
+      navigate(`/browse/${getNumberAfterBrowse(location.pathname, "edit")}`);
     } catch (error) {
       toast.error("Unable to update record");
     } finally {

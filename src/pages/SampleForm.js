@@ -17,7 +17,7 @@ export default function SampleForm() {
       try {
         setIsLoading(true);
         const response = await axios.get(
-          `${BASE_URL}/search?number=${getNumberAfterBrowse(location.pathname, "path")}`,
+          `${BASE_URL}/search?number=${getNumberAfterBrowse(location.pathname, "browse")}`,
         );
         const sampleForm = response.data;
         if (sampleForm.success && sampleForm.data.length > 0) {
